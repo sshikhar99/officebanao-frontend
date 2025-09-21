@@ -1,0 +1,79 @@
+/* Wrapper for when About is used as a full page */
+.about-page {
+  padding: 100px 20px;
+  display: flex;
+  justify-content: center;
+  background: #fff;
+}
+
+/* Section itself */
+.about {
+  padding: 80px 20px;   /* space for in-page use */
+  text-align: center;
+  background: #f9f9f9;
+  color: #333;
+  scroll-margin-top: 100px;  /* ensures navbar doesn’t overlap */
+  border-radius: 12px;
+  max-width: 900px;
+  margin: 0 auto;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+.about-icon {
+  font-size: 48px;
+  color: #00c7d6;
+  margin-bottom: 20px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 199, 214, 0.1);
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+}
+
+.about h2 {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 15px;
+  position: relative;
+  display: inline-block;
+}
+
+.about h2::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  background: linear-gradient(90deg, #c93cff, #00c7d6, #007bff);
+  margin: 6px auto 0;
+  border-radius: 2px;
+}
+
+.about p {
+  max-width: 750px;
+  margin: 0 auto;
+  font-size: 18px;
+  line-height: 1.6;
+  color: #555;
+}
+
+/* About.css */
+
+/* ✅ Match the button style with "View All Projects" */
+.see-more-btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: background 0.3s ease;
+}
+
+.see-more-btn:hover {
+  background-color: #0056b3;
+}
+

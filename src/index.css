@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+/* Apply Poppins globally */
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #fff;
+  color: #333;
+}
+/* Hide phone number text on very small screens */
+@media (max-width: 360px) {
+  .phone-text {
+    display: none;
+  }
+}
+
+
+/* Smooth scrolling across the whole site */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Leave space for navbar when scrolling to anchors */
+section {
+  scroll-margin-top: 90px;
+}
