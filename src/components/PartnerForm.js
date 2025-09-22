@@ -13,9 +13,9 @@ export default function PartnerForm() {
   });
   const [successMsg, setSuccessMsg] = useState("");
 
-  // ✅ Backend API - uses environment variable
+  // ✅ Backend API endpoint (includes /api/partners)
   const API_BASE =
-    process.env.REACT_APP_API_URL || "http://localhost:5001";
+    (process.env.REACT_APP_API_URL || "http://localhost:5001") + "/api/partners";
 
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
@@ -25,13 +25,13 @@ export default function PartnerForm() {
     e.preventDefault();
     try {
       const res = await fetch(API_BASE, {
-  method: "POST",
-  headers: { "Content-Type": "application/json" },
-  body: JSON.stringify({ ...formData, partnerType }),
-});
-
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ ...formData, partnerType }),
+      });
 
       const data = await res.json();
+
       if (res.ok) {
         setSuccessMsg("✅ Your form has been submitted successfully!");
         setFormData({
@@ -64,9 +64,7 @@ export default function PartnerForm() {
     <>
       {/* Partner Type Selector */}
       <div style={{ marginBottom: "20px" }}>
-        <label style={{ fontWeight: "bold", marginRight: "10px" }}>
-          I am a:
-        </label>
+        <label style={{ fontWeight: "bold", marginRight: "10px" }}>I am a:</label>
         <select
           value={partnerType}
           onChange={(e) => setPartnerType(e.target.value)}
