@@ -24,11 +24,12 @@ export default function PartnerForm() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const res = await fetch(`${API_BASE}/api/partners`, {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ ...formData, partnerType }),
-      });
+      const res = await fetch(API_BASE, {
+  method: "POST",
+  headers: { "Content-Type": "application/json" },
+  body: JSON.stringify({ ...formData, partnerType }),
+});
+
 
       const data = await res.json();
       if (res.ok) {
