@@ -15,7 +15,7 @@ export default function PartnerForm() {
 
   // ✅ Backend API endpoint (includes /api/partners)
   const API_BASE =
-    (process.env.REACT_APP_API_URL || "http://localhost:5001") + "/api/partners";
+    (process.env.REACT_APP_API_URL || "http://localhost:8080") + "/api/partners";
 
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
