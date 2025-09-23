@@ -41,64 +41,6 @@ import MobileWalkthroughs from "./components/Mobile/Walkthroughs";
 import MobileResources from "./components/Mobile/Resources";
 import MobileContact from "./components/Mobile/Contact";
 
-// ===== Test Backend Component =====
-function TestBackend() {
-  const [response, setResponse] = useState("");
-
-  const testBackend = async () => {
-    try {
-      const res = await fetch(
-        "https://officebanao-clone-production.up.railway.app/api/partners",
-        {
-          method: "POST",
-          headers: { "Content-Type": "application/json" },
-          body: JSON.stringify({
-            companyName: "Test Company",
-            contactPerson: "Test User",
-            email: "test@example.com",
-            phone: "1234567890",
-            services: "Testing",
-            location: "Nowhere",
-            partnerType: "vendor",
-          }),
-        }
-      );
-
-      if (!res.ok) {
-        const errData = await res.json();
-        setResponse(`Error: ${errData.message || res.statusText}`);
-        return;
-      }
-
-      const data = await res.json();
-      setResponse(`Success: ${JSON.stringify(data)}`);
-    } catch (err) {
-      setResponse(`Fetch failed: ${err.message}`);
-    }
-  };
-
-  return (
-    <div style={{ padding: "20px", marginTop: "30px" }}>
-      <button
-        onClick={testBackend}
-        style={{
-          padding: "10px 20px",
-          background: "#333",
-          color: "#fff",
-          border: "none",
-          borderRadius: "5px",
-          cursor: "pointer",
-        }}
-      >
-        Test Backend
-      </button>
-      {response && (
-        <p style={{ marginTop: "20px", wordBreak: "break-word" }}>{response}</p>
-      )}
-    </div>
-  );
-}
-
 // ===== Desktop Home Component =====
 function DesktopHome() {
   return (
@@ -110,7 +52,6 @@ function DesktopHome() {
       <section id="brands"><TrustedBrands /></section>
       <section id="resources"><DesktopResources /></section>
       <section id="contact"><DesktopContact /></section>
-      <TestBackend /> {/* ✅ Added TestBackend here */}
     </>
   );
 }
@@ -126,7 +67,6 @@ function MobileHome() {
       <section id="brands"><TrustedBrands /></section>
       <section id="resources"><MobileResources /></section>
       <section id="contact"><MobileContact /></section>
-      <TestBackend /> {/* ✅ Added TestBackend here */}
     </>
   );
 }
