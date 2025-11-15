@@ -9,7 +9,7 @@ const Contact = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    const phoneNumber = "917683061117"; // your WhatsApp number
+    const phoneNumber = "919591977398"; // your WhatsApp number
     const text = `New Inquiry from Officespaceinterior\n\nName: ${name}\nEmail: ${email}\nMessage: ${message}`;
 
     // open WhatsApp with prefilled message
@@ -30,7 +30,7 @@ const Contact = () => {
       <p>Have a project in mind? Let’s build your dream office together.</p>
       <div className="contact-details">
         <p>
-          <strong>Phone:</strong> 7683061117
+          <strong>Phone:</strong> 9591977398
         </p>
         <p>
           <strong>Email:</strong> officespaceinterior@gmail.com

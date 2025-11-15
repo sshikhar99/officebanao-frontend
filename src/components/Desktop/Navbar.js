@@ -80,7 +80,9 @@ export default function Navbar() {
           }}
           className="ob-logo"
         >
-          OfficeSpaceInterior
+          <span className="word-black">Office</span>
+          <span className="word-yellow">Space</span>
+          <span className="word-black">Interior</span>
         </a>
 
         {/* Links */}
@@ -100,7 +102,7 @@ export default function Navbar() {
         {/* Call button */}
         <a href="tel:+917683061117" className="ob-call">
           <span className="ob-call-icon">📞</span>
-          <span className="ob-call-text">+91 76830 61117</span>
+          <span className="ob-call-text">+91 9591977398</span>
         </a>
       </div>
     </header>

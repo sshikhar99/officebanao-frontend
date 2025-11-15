@@ -78,16 +78,25 @@ export default function MobileNavbar() {
     >
       {/* Logo */}
       <div
-        style={{ fontWeight: "bold", fontSize: "18px", cursor: "pointer" }}
         onClick={() => navigate("/")}
+        style={{
+          fontWeight: "800",
+          fontSize: "20px",
+          cursor: "pointer",
+          display: "inline-flex",
+          alignItems: "center",
+          gap: "4px",
+          whiteSpace: "nowrap",
+        }}
       >
-        Office Space
-        Interior
+        <span style={{ color: "#000000" }}>Office</span>
+        <span style={{ color: "#facc15" }}>Space</span>
+        <span style={{ color: "#000000" }}>Interior</span>
       </div>
 
       {/* Call button */}
       <a
-        href="tel:+917683061117"
+        href="tel:+919591977398"
         style={{
           display: "flex",
           alignItems: "center",
@@ -102,7 +111,7 @@ export default function MobileNavbar() {
           whiteSpace: "nowrap",
         }}
       >
-        📞 <span className="phone-text">+91 76830 61117</span>
+        📞 <span className="phone-text">+91 95919 77398</span>
       </a>
 
       {/* Hamburger Button */}

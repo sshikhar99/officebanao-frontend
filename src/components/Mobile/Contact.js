@@ -7,7 +7,7 @@ export default function MobileContact() {
   const [message, setMessage] = useState("");
 
   const openWhatsApp = () => {
-    const phoneNumber = "917683061117"; // Your WhatsApp number
+    const phoneNumber = "919392060816"; // Your WhatsApp number
     const text = `📩 New Inquiry from OfficeSpaceInterior\n\n👤 Name: ${name}\n📧 Email: ${email}\n💬 Message: ${message}`;
 
     window.open(
@@ -25,7 +25,7 @@ export default function MobileContact() {
     <section style={{ padding: "20px", textAlign: "center" }}>
       <h2>Contact Us</h2>
       <p>Email: officespaceinterior@gmail.com</p>
-      <p>Phone: +91-7683061117</p>
+      <p>Phone: +91-9392060816</p>
 
       <form
         onSubmit={(e) => {

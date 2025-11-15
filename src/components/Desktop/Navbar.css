@@ -19,14 +19,25 @@
   gap: 16px;
 }
 
-/* --- Logo --- */
+/* --- Logo Container --- */
 .ob-logo {
-  font-size: 22px;
-  font-weight: 800;
-  color: #0f172a;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;               /* spacing between the 3 words */
+  font-size: 26px;        /* bigger + premium look */
+  font-weight: 800;       /* bold for identity */
   text-decoration: none;
-  letter-spacing: 0.2px;
+  letter-spacing: 0.3px;
   white-space: nowrap;
+}
+
+/* individual word colors */
+.word-black {
+  color: #000000;         /* pure black */
+}
+
+.word-yellow {
+  color: #facc15;         /* premium yellow */
 }
 
 /* --- Center nav --- */

@@ -11,10 +11,12 @@ const Footer = () => {
           Transforming your workspace into a modern, productive, and aesthetic environment.
         </p>
         <p className="footer-contact">
-          📞 Contact: <a href="tel:+917683061117">7683061117</a>
+          📞 Contact: <a href="tel:+919591977398">9591977398</a>
           <br />
           🌐 Website: <a href="https://officespaceinterior.in">officespaceinterior.in</a>
         </p>
+        48/1, BILESHIVALE VILLAGE, KOTHANUR POST 
+        BENGALURU, KARNATAKA, 560077
         <p className="footer-bottom">
           © 2025 Officespaceinterior.in — All Rights Reserved.
         </p>
