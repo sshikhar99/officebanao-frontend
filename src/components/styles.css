@@ -56,7 +56,6 @@ body {
 .about { background: #fff; }
 .portfolio { background: #f8f8f8; }
 .walkthroughs { background: #fff; }
-.resources { background: #f8f8f8; }
 
 /* Portfolio Grid */
 .grid { display: flex; justify-content: center; gap: 20px; margin-top: 20px; }
