@@ -41,7 +41,7 @@ export default function Navbar() {
       return;
     }
 
-    // About / Walkthroughs / Resources special behavior
+    // About / Walkthroughs special behavior
     if (special) {
       if (location.pathname === "/") {
         // Already on home → scroll to section
