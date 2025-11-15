@@ -9,9 +9,9 @@ import "slick-carousel/slick/slick-theme.css";
 import "./Walkthroughs.css";
 
 // Your project images
-import project1 from "../../assets/project1.webp";
-import project2 from "../../assets/project2.webp";
-import project3 from "../../assets/project3.webp";
+import project1 from "../../assets/project1.jpg";
+import project2 from "../../assets/project2.jpg";
+import project3 from "../../assets/project3.jpg";
 
 function Walkthroughs() {
   const settings = {

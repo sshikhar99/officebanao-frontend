@@ -1,7 +1,7 @@
 import React from "react";
-import project1 from "../../assets/project1.webp";
-import project2 from "../../assets/project2.webp";
-import project3 from "../../assets/project3.webp";
+import project1 from "../../assets/project1.jpg";
+import project2 from "../../assets/project2.jpg";
+import project3 from "../../assets/project3.jpg";
 import { Link } from "react-router-dom";
 
 export default function MobileWalkthroughs({ isPage = false }) {
