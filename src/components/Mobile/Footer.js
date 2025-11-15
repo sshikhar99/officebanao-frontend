@@ -14,8 +14,10 @@ export default function MobileFooter() {
     >
       <p style={{ margin: "5px 0", fontSize: "14px" }}>
         © {new Date().getFullYear()} OfficeSpaceInterior.
+        
         48/1, BILESHIVALE VILLAGE, KOTHANUR POST 
         BENGALURU, KARNATAKA, 560077
+
          All Rights Reserved.
       </p>
       <p style={{ margin: "5px 0", fontSize: "12px", opacity: "0.8" }}>
