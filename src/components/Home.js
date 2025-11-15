@@ -8,7 +8,6 @@ import DesktopHero from "./Desktop/HeroSection";
 import DesktopAbout from "./Desktop/About";
 import DesktopProjects from "./Desktop/Projects";
 import DesktopWalkthroughs from "./Desktop/Walkthroughs";
-import DesktopResources from "./Desktop/Resources";
 import DesktopContact from "./Desktop/Contact";
 
 // Mobile components
@@ -18,7 +17,6 @@ import MobileHero from "./Mobile/HeroSection";
 import MobileAbout from "./Mobile/About";
 import MobileProjects from "./Mobile/Projects";
 import MobileWalkthroughs from "./Mobile/Walkthroughs";
-import MobileResources from "./Mobile/Resources";
 import MobileContact from "./Mobile/Contact";
 
 // Shared Section
@@ -36,7 +34,6 @@ function Home() {
         <section id="projects"><MobileProjects /></section>
         <section id="walkthroughs"><MobileWalkthroughs /></section>
         <section id="brands"><TrustedBrands /></section>
-        <section id="resources"><MobileResources /></section>
         <section id="contact"><MobileContact /></section>
         <MobileFooter />
       </>
@@ -51,7 +48,6 @@ function Home() {
       <section id="projects"><DesktopProjects /></section>
       <section id="walkthroughs"><DesktopWalkthroughs /></section>
       <section id="brands"><TrustedBrands /></section>
-      <section id="resources"><DesktopResources /></section>
       <section id="contact"><DesktopContact /></section>
       <DesktopFooter />
     </>
