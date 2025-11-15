@@ -51,7 +51,7 @@ export default function Projects() {
                 alt={p.title}
                 style={{
                   width: "100%",
-                  height: "100%",
+                  height: "auto",
                   borderRadius: "8px",
                   marginBottom: "12px",
                   objectFit: "cover",
