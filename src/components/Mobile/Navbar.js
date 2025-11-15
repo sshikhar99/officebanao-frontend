@@ -91,6 +91,7 @@ export default function MobileNavbar() {
       >
         <span style={{ color: "#fcf8f8ff" }}>Office</span>
         <span style={{ color: "#facc15" }}>Space</span>
+        
         <span style={{ color: "#fcf9f9ff" }}>Interior</span>
       </div>
 
