@@ -81,7 +81,8 @@ export default function MobileNavbar() {
         style={{ fontWeight: "bold", fontSize: "18px", cursor: "pointer" }}
         onClick={() => navigate("/")}
       >
-        OfficeSpaceInterior
+        Office Space
+        Interior
       </div>
 
       {/* Call button */}
