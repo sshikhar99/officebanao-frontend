@@ -11,7 +11,7 @@ const About = () => {
         </div>
         <h2>About Us</h2>
         <p>
-          At <b>OfficeBanao.in</b>, we create world-class office interiors tailored
+          At <b>Officespaceinterior.in</b>, we create world-class office interiors tailored
           to your business needs. From startups to enterprises, we bring{" "}
           <b>innovative design</b> and <b>functionality</b> together to transform
           workspaces into inspiring environments.

@@ -80,7 +80,7 @@ export default function Navbar() {
           }}
           className="ob-logo"
         >
-          OfficeBanao.in
+          OfficeSpaceInterior
         </a>
 
         {/* Links */}

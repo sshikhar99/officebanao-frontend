@@ -11,7 +11,7 @@ const HomeAbout = () => {
       </div>
       <h2>About Us</h2>
       <p>
-        At <b>OfficeBanao.in</b>, we design world-class office interiors for startups and enterprises.
+        At <b>Officespaceinterior.in</b>, we design world-class office interiors for startups and enterprises.
         We blend <b>innovation</b> and <b>functionality</b> to transform workspaces.
       </p>
 

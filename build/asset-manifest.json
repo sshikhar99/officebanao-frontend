@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "./static/css/main.e6474060.css",
+    "main.js": "./static/js/main.8a6c50b1.js",
+    "static/media/project1.webp": "./static/media/project1.c960bc35c16665091e72.webp",
+    "static/media/ihg.png": "./static/media/ihg.771faa9b7368d20a0e87.png",
+    "static/media/project2.webp": "./static/media/project2.194971dfde6537fc41fa.webp",
+    "static/media/pioneer.png": "./static/media/pioneer.dd21ff4d6a1af547cfaf.png",
+    "static/media/blusmart.png": "./static/media/blusmart.9f90e1d1db5bc4c2faf9.png",
+    "static/media/project3.webp": "./static/media/project3.7c947002a3502853c876.webp",
+    "static/media/okaya.png": "./static/media/okaya.217df722b50e80d5128b.png",
+    "static/media/slick.svg": "./static/media/slick.7ba97953187dc2907930.svg",
+    "static/media/slick.eot": "./static/media/slick.a4e97f5a2a64f0ab1323.eot",
+    "static/media/slick.ttf": "./static/media/slick.c94f7671dcc99dce43e2.ttf",
+    "static/media/slick.woff": "./static/media/slick.295183786cd8a1389865.woff",
+    "index.html": "./index.html",
+    "main.e6474060.css.map": "./static/css/main.e6474060.css.map",
+    "main.8a6c50b1.js.map": "./static/js/main.8a6c50b1.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e6474060.css",
+    "static/js/main.8a6c50b1.js"
+  ]
+}
