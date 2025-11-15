@@ -78,21 +78,11 @@ export default function MobileNavbar() {
     >
       {/* Logo */}
       <div
+        style={{ fontWeight: "bold", fontSize: "18px", cursor: "pointer" }}
         onClick={() => navigate("/")}
-        style={{
-          fontWeight: "800",
-          fontSize: "20px",
-          cursor: "pointer",
-          display: "inline-flex",
-          alignItems: "center",
-          gap: "4px",
-          whiteSpace: "nowrap",
-        }}
       >
-        <span style={{ color: "#fcf8f8ff" }}>Office</span>
-        <span style={{ color: "#facc15" }}>Space</span>
-        
-        <span style={{ color: "#fcf9f9ff" }}>Interior</span>
+        Office Space
+        Interior
       </div>
 
       {/* Call button */}
