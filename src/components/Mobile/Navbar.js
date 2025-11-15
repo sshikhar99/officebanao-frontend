@@ -70,7 +70,7 @@ export default function MobileNavbar() {
         alignItems: "center",
         padding: "12px 20px",
         background: "#111",
-        color: "#facc15",
+        color: "#f8b400",
         position: "sticky",
         top: 0,
         zIndex: 1000,
