@@ -66,7 +66,7 @@ export default function MobileAbout({ isPage = false }) {
           margin: "0 auto 20px",
         }}
       >
-        At <b>OfficeBanao.in</b>, we design modern and functional workspaces
+        At <b>Officespaceinterior</b>, we design modern and functional workspaces
         tailored to your company’s needs. From startups to enterprises, we blend{" "}
         <b>innovation</b> and <b>productivity</b> to create offices that inspire
         collaboration and growth.

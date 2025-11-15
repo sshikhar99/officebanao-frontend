@@ -16,7 +16,7 @@ export default function MobileFooter() {
         © {new Date().getFullYear()} OfficeBanao. All Rights Reserved.
       </p>
       <p style={{ margin: "5px 0", fontSize: "12px", opacity: "0.8" }}>
-        Designed with ❤️ by OfficeBanao Team
+        Designed with ❤️ by OfficeSpaceInterior Team
       </p>
     </footer>
   );
