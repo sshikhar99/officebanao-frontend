@@ -48,7 +48,7 @@ body {
 .nav-links { list-style: none; display: flex; gap: 20px; }
 .nav-links li { cursor: pointer; }
 .btn { background: #007bff; color: rgb(250, 204, 21); padding: 8px 15px; border: none; border-radius: 5px; cursor: pointer; }
-.phone { margin-left: 15px; color: white; background: #28a745; padding: 8px 15px; border-radius: 5px; }
+.phone { margin-left: 15px; color: rgb(250, 204, 21); background: #28a745; padding: 8px 15px; border-radius: 5px; }
 
 /* Sections */
 .section { padding: 100px 20px; text-align: center; }
