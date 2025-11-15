@@ -13,7 +13,7 @@ export default function MobileHero() {
       }}
     >
       <h1 style={{ fontSize: "28px", fontWeight: "700", marginBottom: "15px" }}>
-        Welcome to <span style={{ color: "#f8b400" }}>OfficeBanao</span>
+        Welcome to <span style={{ color: "#f8b400" }}>Office Space Interior</span>
       </h1>
       <p style={{ fontSize: "16px", marginBottom: "25px", lineHeight: "1.6" }}>
         We design modern and functional workspaces for startups and enterprises.
