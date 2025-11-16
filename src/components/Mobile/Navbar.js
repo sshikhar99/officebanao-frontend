@@ -9,45 +9,36 @@ export default function MobileNavbar() {
   const handleNavClick = (id, special, isPage) => {
     setIsOpen(false); // close menu
 
-    // Blogs
     if (id === "blogs") {
       navigate("/blogs");
       return;
     }
 
-    // Partner
     if (id === "partner") {
       navigate("/become-partner");
       return;
     }
 
-    // Projects page
     if (id === "projects" || isPage) {
       navigate("/projects");
       return;
     }
 
-    // Special items (About, Walkthroughs, Resources)
     if (special) {
       if (location.pathname === "/") {
         const el = document.getElementById(id);
-        if (el) {
-          el.scrollIntoView({ behavior: "smooth", block: "start" });
-        }
+        if (el) el.scrollIntoView({ behavior: "smooth", block: "start" });
       } else {
         navigate(`/${id}`);
       }
       return;
     }
 
-    // Default → scroll on home
     if (location.pathname !== "/") {
       navigate("/", { state: { scrollTo: id } });
     } else {
       const el = document.getElementById(id);
-      if (el) {
-        el.scrollIntoView({ behavior: "smooth", block: "start" });
-      }
+      if (el) el.scrollIntoView({ behavior: "smooth", block: "start" });
     }
   };
 
@@ -56,7 +47,6 @@ export default function MobileNavbar() {
     { id: "about", label: "About", special: true },
     { id: "projects", label: "Our Work", isPage: true },
     { id: "walkthroughs", label: "Walkthroughs", special: true },
-    { id: "resources", label: "Resources", special: true },
     { id: "blogs", label: "Blogs" },
     { id: "partner", label: "Become a Partner" },
     { id: "contact", label: "Contact" },
@@ -76,13 +66,20 @@ export default function MobileNavbar() {
         zIndex: 1000,
       }}
     >
-      {/* Logo */}
+      {/* ★ Updated Logo */}
       <div
-        style={{ fontWeight: "bold", fontSize: "18px", cursor: "pointer" }}
         onClick={() => navigate("/")}
+        style={{ cursor: "pointer", display: "flex", alignItems: "center" }}
       >
-        Office Space
-        Interior
+        <img
+          src="/logo.png"
+          alt="Office Space Interior"
+          style={{
+            height: "70px",   // Make logo bigger
+            width: "auto",
+            objectFit: "contain",
+          }}
+        />
       </div>
 
       {/* Call button */}
