@@ -20,16 +20,30 @@
 }
 
 /* --- Logo Container --- */
-.ob-logo {
-  display: inline-flex;
-  align-items: center;
-  gap: 4px;               /* spacing between the 3 words */
-  font-size: 26px;        /* bigger + premium look */
-  font-weight: 800;       /* bold for identity */
-  text-decoration: none;
-  letter-spacing: 0.3px;
-  white-space: nowrap;
+.ob-logo-img {
+  height: 55px;        /* keeps navbar normal */
+  width: auto;
+  object-fit: contain;
+  object-position: center;
+  padding: 0;          /* remove white space around */
+  margin: 0;
+  display: block;
 }
+.nav-logo {
+  height: 70px;       /* visible size */
+  width: auto;
+  object-fit: contain;
+  display: block;
+}
+
+
+.navbar {
+  height: 90px;
+  display: flex;
+  align-items: center;
+}
+
+
 
 /* individual word colors */
 .word-black {

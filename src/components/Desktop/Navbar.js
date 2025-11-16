@@ -71,18 +71,10 @@ export default function Navbar() {
     <header className="ob-navbar">
       <div className="ob-container">
         {/* Logo */}
-        <a
-          href="/"
-          onClick={(e) => {
-            e.preventDefault();
-            navigate("/", { state: { scrollTo: "home" } });
-          }}
-          className="ob-logo"
-        >
-          <span className="word-black">Office</span>
-          <span className="word-yellow">Space</span>
-          <span className="word-black">Interior</span>
-        </a>
+        <a href="/" className="navbar-logo">
+  <img src="/logo.png" alt="Office Space Interior" className="nav-logo" />
+</a>
+
 
         {/* Links */}
         <nav className="ob-nav">
