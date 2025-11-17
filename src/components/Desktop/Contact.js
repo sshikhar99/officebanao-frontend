@@ -30,7 +30,7 @@ const Contact = () => {
       <p>Have a project in mind? Let’s build your dream office together.</p>
       <div className="contact-details">
         <p>
-          <strong>Phone:</strong> 9591977398
+          <strong>Phone:</strong> 9392060816
         </p>
         <p>
           <strong>Email:</strong> officespaceinterior@gmail.com
