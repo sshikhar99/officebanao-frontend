@@ -84,7 +84,7 @@ export default function MobileNavbar() {
 
       {/* Call button */}
       <a
-        href="tel:+919591977398"
+        href="tel:+919392060816"
         style={{
           display: "flex",
           alignItems: "center",
@@ -99,7 +99,7 @@ export default function MobileNavbar() {
           whiteSpace: "nowrap",
         }}
       >
-        📞 <span className="phone-text">+91 95919 77398</span>
+        📞 <span className="phone-text">+91 93920 60816</span>
       </a>
 
       {/* Hamburger Button */}

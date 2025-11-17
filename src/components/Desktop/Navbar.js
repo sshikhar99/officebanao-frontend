@@ -91,9 +91,9 @@ export default function Navbar() {
         </nav>
 
         {/* Call button */}
-        <a href="tel:+917683061117" className="ob-call">
+        <a href="tel:+919392060816" className="ob-call">
           <span className="ob-call-icon">📞</span>
-          <span className="ob-call-text">+91 9591977398</span>
+          <span className="ob-call-text">+91 93920 60816</span>
         </a>
       </div>
     </header>

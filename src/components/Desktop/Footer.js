@@ -11,7 +11,7 @@ const Footer = () => {
           Transforming your workspace into a modern, productive, and aesthetic environment.
         </p>
         <p className="footer-contact">
-          📞 Contact: <a href="tel:+919591977398">9591977398</a>
+          📞 Contact: <a href="tel:+919392060816">9392060816</a>
           <br />
           🌐 Website: <a href="https://officespaceinterior.in">officespaceinterior.in</a>
         </p>
