@@ -9,8 +9,6 @@ import Blogs from "./pages/Blogs";
 import BecomePartner from "./pages/BecomePartner";
 import ProjectsPage from "./pages/ProjectsPage";
 import About from "./pages/About";
-import Walkthroughs from "./pages/Walkthroughs";
-import WalkthroughDetails from "./pages/WalkthroughDetails";
 import ProjectDetail from "./pages/ProjectDetail";
 import BlogDetail from "./pages/BlogDetail";
 
@@ -25,7 +23,6 @@ import Layout from "./Layout/Layout";
 import DesktopHero from "./components/Desktop/HeroSection";
 import DesktopAbout from "./components/Desktop/About";
 import DesktopProjects from "./components/Desktop/Projects";
-import DesktopWalkthroughs from "./components/Desktop/Walkthroughs";
 import DesktopContact from "./components/Desktop/Contact";
 import TrustedBrands from "./components/Desktop/TrustedBrands";
 
@@ -33,7 +30,6 @@ import TrustedBrands from "./components/Desktop/TrustedBrands";
 import MobileHero from "./components/Mobile/HeroSection";
 import MobileAbout from "./components/Mobile/About";
 import MobileProjects from "./components/Mobile/Projects";
-import MobileWalkthroughs from "./components/Mobile/Walkthroughs";
 import MobileContact from "./components/Mobile/Contact";
 
 // ===== Desktop Home Component =====
@@ -43,7 +39,6 @@ function DesktopHome() {
       <section id="home"><DesktopHero /></section>
       <section id="about"><DesktopAbout /></section>
       <section id="projects"><DesktopProjects /></section>
-      <section id="walkthroughs"><DesktopWalkthroughs /></section>
       <section id="brands"><TrustedBrands /></section>
       <section id="contact"><DesktopContact /></section>
     </>
@@ -57,7 +52,6 @@ function MobileHome() {
       <section id="home"><MobileHero /></section>
       <section id="about"><MobileAbout /></section>
       <section id="projects"><MobileProjects /></section>
-      <section id="walkthroughs"><MobileWalkthroughs /></section>
       <section id="brands"><TrustedBrands /></section>
       <section id="contact"><MobileContact /></section>
     </>
@@ -114,10 +108,8 @@ export default function App() {
         <Route path="/blogs" element={<Layout><Blogs /></Layout>} />
         <Route path="/become-partner" element={<Layout><BecomePartner /></Layout>} />
         <Route path="/about" element={<Layout><About /></Layout>} />
-        <Route path="/walkthroughs" element={<Layout><Walkthroughs /></Layout>} />
 
         {/* Details Pages */}
-        <Route path="/walkthroughs/:id" element={<WalkthroughDetails />} />
         <Route path="/projects/:id" element={<ProjectDetail />} />
         <Route path="/blogs/:id" element={<BlogDetail />} />
 

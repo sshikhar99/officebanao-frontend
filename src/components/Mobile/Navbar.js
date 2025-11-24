@@ -46,7 +46,6 @@ export default function MobileNavbar() {
     { id: "home", label: "Home" },
     { id: "about", label: "About", special: true },
     { id: "projects", label: "Our Work", isPage: true },
-    { id: "walkthroughs", label: "Walkthroughs", special: true },
     { id: "blogs", label: "Blogs" },
     { id: "partner", label: "Become a Partner" },
     { id: "contact", label: "Contact" },

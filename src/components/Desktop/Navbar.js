@@ -6,7 +6,6 @@ const LINKS = [
   { id: "home", label: "Home" },
   { id: "about", label: "About", special: true },          // ✅ scroll OR page
   { id: "projects", label: "OurWork", isPage: true },      // separate page
-  { id: "walkthroughs", label: "Walkthroughs", special: true }, // ✅ scroll OR page
   { id: "blogs", label: "Blogs", isPage: true },
   { id: "partner", label: "Become a Partner", isPage: true },
   { id: "contact", label: "Contact" },
