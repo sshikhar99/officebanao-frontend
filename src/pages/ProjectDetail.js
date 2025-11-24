@@ -1,8 +1,8 @@
 import React from "react";
 import { useParams, Link } from "react-router-dom";
-import project1 from "../assets/Projects/project1.jpg";
-import project2 from "../assets/Projects/project2.jpg";
-import project3 from "../assets/Projects/project3.jpg";
+import project1 from "../assets/Projects/project1_tmp.jpg";
+import project2 from "../assets/Projects/project2_tmp.jpg";
+import project3 from "../assets/Projects/project3_tmp.jpg";
 
 const projectData = {
   1: { title: "Modern Workspace", image: project1, description: "A sleek modern office design blends minimalism with functionality, creating a space that feels open, stylish, and efficient. Clean lines, neutral tones, and smart layouts enhance focus while promoting collaboration. With ergonomic furniture and contemporary finishes, it transforms the workplace into an inspiring hub for creativity and productivity." },
