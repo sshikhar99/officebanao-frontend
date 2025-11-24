@@ -1,34 +1,30 @@
 import React from "react";
 import "./HeroSection.css";
 
-function HeroSection() {
-  const scrollToProjects = () => {
-    const el = document.getElementById("projects");
-    if (el) el.scrollIntoView({ behavior: "smooth", block: "start" });
-  };
-
-  const scrollToContact = () => {
-    const el = document.getElementById("contact");
+export default function HeroSection() {
+  const scrollTo = (id) => {
+    const el = document.getElementById(id);
     if (el) el.scrollIntoView({ behavior: "smooth", block: "start" });
   };
 
   return (
-    <section className="hero" id="home">
-      <div className="hero-content">
+    <section className="heroA-container" id="home">
+      <div className="heroA-content">
         <h1>
-          Get Premium Office Interiors <span>your employees will love!</span>
+          Transforming <span>Workspaces</span> That Inspire
         </h1>
+
         <p>
-          Achieve your ideal office space in <strong>75 days</strong> with our
-          brand-centric designs, engineered for cost efficiency and operational
-          excellence.
+          Modern office interiors, collaborative environments & functional
+          layouts — delivered in <strong>75 days</strong>.
         </p>
 
-        <div className="hero-buttons">
-          <button className="btn-secondary" onClick={scrollToContact}>
+        <div className="heroA-buttons">
+          <button onClick={() => scrollTo("contact")} className="heroA-btn-secondary">
             Enquire Now
           </button>
-          <button className="btn-primary" onClick={scrollToProjects}>
+
+          <button onClick={() => scrollTo("projects")} className="heroA-btn-primary">
             View Projects →
           </button>
         </div>
@@ -36,5 +32,3 @@ function HeroSection() {
     </section>
   );
 }
-
-export default HeroSection;
