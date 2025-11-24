@@ -1,5 +1,12 @@
 {
   "rewrites": [
+    { "source": "/static/:path*", "destination": "/static/:path*" },
+    { "source": "/static/media/:path*", "destination": "/static/media/:path*" },
+    { "source": "/assets/:path*", "destination": "/assets/:path*" },
+    { "source": "/favicon.ico", "destination": "/favicon.ico" },
+    { "source": "/logo.png", "destination": "/logo.png" },
+    { "source": "/manifest.json", "destination": "/manifest.json" },
+    { "source": "/robots.txt", "destination": "/robots.txt" },
     { "source": "/(.*)", "destination": "/" }
   ]
 }
