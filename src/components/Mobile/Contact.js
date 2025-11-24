@@ -24,7 +24,7 @@ export default function MobileContact() {
   return (
     <section style={{ padding: "20px", textAlign: "center" }}>
       <h2>Contact Us</h2>
-      <p>Email: officespaceinterior@gmail.com</p>
+      <p>Email: contact@officespaceinterior.in</p>
       <p>Phone: +91-9392060816</p>
 
       <form

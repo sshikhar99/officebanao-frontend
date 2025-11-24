@@ -33,7 +33,7 @@ const Contact = () => {
           <strong>Phone:</strong> 9392060816
         </p>
         <p>
-          <strong>Email:</strong> officespaceinterior@gmail.com
+          <strong>Email:</strong> contact@officespaceinterior.in
         </p>
       </div>
       <form className="contact-form" onSubmit={handleSubmit}>
