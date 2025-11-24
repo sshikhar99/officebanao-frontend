@@ -12,6 +12,7 @@ import About from "./pages/About";
 import ProjectDetail from "./pages/ProjectDetail";
 import BlogDetail from "./pages/BlogDetail";
 
+
 // Admin Pages
 import AdminLogin from "./pages/AdminLogin";
 import AdminDashboard from "./pages/AdminDashboard";
@@ -25,12 +26,16 @@ import DesktopAbout from "./components/Desktop/About";
 import DesktopProjects from "./components/Desktop/Projects";
 import DesktopContact from "./components/Desktop/Contact";
 import TrustedBrands from "./components/Desktop/TrustedBrands";
+import DesktopServices from "./components/Desktop/Services";
+import DesktopTestimonials from "./components/Desktop/Testimonials";
 
 // ===== Mobile Home =====
 import MobileHero from "./components/Mobile/HeroSection";
 import MobileAbout from "./components/Mobile/About";
 import MobileProjects from "./components/Mobile/Projects";
 import MobileContact from "./components/Mobile/Contact";
+import MobileServices from "./components/Mobile/Services";
+import MobileTestimonials from "./components/Mobile/Testimonials";
 
 // ===== Desktop Home Component =====
 function DesktopHome() {
@@ -39,6 +44,8 @@ function DesktopHome() {
       <section id="home"><DesktopHero /></section>
       <section id="about"><DesktopAbout /></section>
       <section id="projects"><DesktopProjects /></section>
+      <section id="services"><DesktopServices /></section>
+      <section id="testimonials"><DesktopTestimonials /></section>
       <section id="brands"><TrustedBrands /></section>
       <section id="contact"><DesktopContact /></section>
     </>
@@ -52,6 +59,8 @@ function MobileHome() {
       <section id="home"><MobileHero /></section>
       <section id="about"><MobileAbout /></section>
       <section id="projects"><MobileProjects /></section>
+      <section id="services"><MobileServices /></section>
+      <section id="testimonials"><MobileTestimonials /></section>
       <section id="brands"><TrustedBrands /></section>
       <section id="contact"><MobileContact /></section>
     </>
