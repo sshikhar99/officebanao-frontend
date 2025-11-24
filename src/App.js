@@ -12,7 +12,6 @@ import About from "./pages/About";
 import ProjectDetail from "./pages/ProjectDetail";
 import BlogDetail from "./pages/BlogDetail";
 
-
 // Admin Pages
 import AdminLogin from "./pages/AdminLogin";
 import AdminDashboard from "./pages/AdminDashboard";
@@ -32,7 +31,6 @@ import TestimonialsSlider from "./components/Desktop/TestimonialsSlider";
 import FAQ from "./components/Desktop/FAQ";
 import WhyChooseUs from "./components/Desktop/WhyChooseUs";
 
-
 // ===== Mobile Home =====
 import MobileHero from "./components/Mobile/HeroSection";
 import MobileAbout from "./components/Mobile/About";
@@ -40,9 +38,6 @@ import MobileProjects from "./components/Mobile/Projects";
 import MobileContact from "./components/Mobile/Contact";
 import MobileServices from "./components/Mobile/Services";
 import MobileTestimonialsSlider from "./components/Mobile/MobileTestimonialsSlider";
-
-
-
 
 // ===== Desktop Home Component =====
 function DesktopHome() {
@@ -130,28 +125,36 @@ export default function App() {
         <Route path="/become-partner" element={<Layout><BecomePartner /></Layout>} />
         <Route path="/about" element={<Layout><About /></Layout>} />
 
-        {/* Details Pages */}
-        <Route path="/projects/:id" element={<ProjectDetail />} />
-        <Route path="/blogs/:id" element={<BlogDetail />} />
+        {/* DETAILS PAGES (Corrected) */}
+        <Route
+          path="/projects/:id"
+          element={
+            <Layout>
+              <ProjectDetail />
+            </Layout>
+          }
+        />
 
-<Route
-  path="/projects/:id"
-  element={
-    <Layout>
-      <ProjectDetail />
-    </Layout>
-  }
-/>
+        <Route
+          path="/blogs/:id"
+          element={
+            <Layout>
+              <BlogDetail />
+            </Layout>
+          }
+        />
 
         {/* Admin Routes */}
         <Route
           path="/admin"
           element={
             loggedIn ? (
-              <AdminDashboard onLogout={() => {
-                localStorage.removeItem("token");
-                setLoggedIn(false);
-              }} />
+              <AdminDashboard
+                onLogout={() => {
+                  localStorage.removeItem("token");
+                  setLoggedIn(false);
+                }}
+              />
             ) : (
               <AdminLogin onLogin={() => setLoggedIn(true)} />
             )
