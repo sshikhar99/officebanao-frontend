@@ -134,6 +134,14 @@ export default function App() {
         <Route path="/projects/:id" element={<ProjectDetail />} />
         <Route path="/blogs/:id" element={<BlogDetail />} />
 
+<Route
+  path="/projects/:id"
+  element={
+    <Layout>
+      <ProjectDetail />
+    </Layout>
+  }
+/>
 
         {/* Admin Routes */}
         <Route
