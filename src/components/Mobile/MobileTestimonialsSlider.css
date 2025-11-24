@@ -1,0 +1,42 @@
+.mts-wrapper {
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.mts-title {
+  font-size: 26px;
+  font-weight: 600;
+  margin-bottom: 25px;
+}
+
+.mts-card {
+  background: #fff;
+  padding: 22px 20px;
+  border-radius: 12px;
+  box-shadow: 0px 6px 18px rgba(0,0,0,0.08);
+  margin: 0 10px;
+}
+
+.mts-msg {
+  font-size: 14px;
+  color: #444;
+  margin-bottom: 10px;
+  line-height: 1.5;
+}
+
+.mts-name {
+  font-size: 14px;
+  font-weight: 600;
+  margin-top: 8px;
+}
+
+/* Dots (pagination) */
+.swiper-pagination-bullet {
+  background: #000 !important;
+  opacity: 0.4 !important;
+}
+
+.swiper-pagination-bullet-active {
+  background: #ff8800 !important;
+  opacity: 1 !important;
+}

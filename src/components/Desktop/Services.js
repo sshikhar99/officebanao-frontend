@@ -4,52 +4,35 @@ import "./Services.css";
 export default function DesktopServices() {
   const services = [
     {
-      title: "Office Interior Design",
-      desc: "Modern, functional, and branded workspace designs tailored to your business.",
-      icon: "💼",
-    },
-    {
-      title: "Turnkey Execution",
-      desc: "Complete end-to-end project execution including civil, electrical & furniture.",
-      icon: "⚙️",
-    },
-    {
-      title: "Renovation & Makeover",
-      desc: "Transform old office spaces into inspiring, high-performance environments.",
       icon: "🏢",
+      title: "End-to-End Interior Execution",
+      desc: "From design to delivery, we manage the complete execution process."
     },
     {
-      title: "Space Planning",
-      desc: "Optimized layouts to improve productivity, efficiency & workflow.",
-      icon: "📐",
+      icon: "🛠️",
+      title: "Modular Furniture",
+      desc: "High-quality custom furniture designed for modern office needs."
     },
     {
-      title: "Custom Furniture",
-      desc: "Bespoke office tables, reception desks, workstations & modular units.",
-      icon: "🪑",
-    },
-    {
-      title: "Project Management",
-      desc: "Dedicated on-site managers for seamless execution & timely delivery.",
-      icon: "📋",
-    },
+      icon: "🎨",
+      title: "Concept & 3D Designing",
+      desc: "Get a complete visual walkthrough before execution even begins."
+    }
   ];
 
   return (
-    <section className="desktop-services">
-      <h2 className="section-title">
-        Our <span>Services</span>
-      </h2>
+    <div className="ds-services-wrapper">
+      <h2 className="ds-title">Our Services</h2>
 
-      <div className="services-grid">
-        {services.map((service, idx) => (
-          <div className="service-card" key={idx}>
-            <div className="service-icon">{service.icon}</div>
-            <h3>{service.title}</h3>
-            <p>{service.desc}</p>
+      <div className="ds-service-grid">
+        {services.map((item, index) => (
+          <div key={index} className="ds-service-card">
+            <div className="ds-icon">{item.icon}</div>
+            <h3>{item.title}</h3>
+            <p>{item.desc}</p>
           </div>
         ))}
       </div>
-    </section>
+    </div>
   );
 }

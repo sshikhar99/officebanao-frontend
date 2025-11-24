@@ -1,80 +1,29 @@
-/* ===========================
-   DESKTOP TESTIMONIALS
-=========================== */
-.desktop-testimonials {
-  padding: 80px 8%;
-  background: #fafafa;
-  animation: fadeUp 0.8s ease;
-}
-
-.testimonials-wrapper {
-  display: flex;
-  justify-content: center;
-  gap: 40px;
-  margin-top: 40px;
-}
-
-.testimonial-card {
-  width: 350px;
-  background: white;
-  border-radius: 18px;
-  padding: 28px;
-  text-align: center;
-  border: 1px solid #e5e5e5;
-  box-shadow: rgba(0,0,0,0.06) 0px 5px 15px;
-  animation: fadeUp 1s ease;
-  transition: 0.3s ease;
-}
-
-.testimonial-card:hover {
-  transform: translateY(-10px);
-  box-shadow: rgba(0,0,0,0.12) 0px 8px 22px;
-}
-
-.testimonial-img {
-  height: 85px;
-  width: 85px;
-  border-radius: 50%;
-  margin-bottom: 20px;
-}
-
-.testimonial-text {
-  font-size: 15px;
-  font-style: italic;
-  margin: 12px 0;
-}
-
-.company {
-  font-size: 14px;
-  opacity: 0.7;
-}
-
-/* ===========================
-   MOBILE TESTIMONIALS
-=========================== */
-.mobile-testimonials {
-  padding: 50px 6%;
-  animation: fadeUp 1s ease;
+.mt-wrapper {
+  padding: 50px 20px;
   text-align: center;
 }
 
-.mobile-testimonial-card {
-  background: white;
-  padding: 22px;
-  border-radius: 16px;
-  box-shadow: rgba(0,0,0,0.10) 0px 5px 15px;
-  margin-bottom: 22px;
-  animation: fadeUp 1s ease;
-}
-
-.mobile-testimonial-img {
-  height: 70px;
-  width: 70px;
-  border-radius: 50%;
-}
-
-.mobile-testimonial-card h4 {
-  margin-top: 10px;
+.mt-title {
+  font-size: 26px;
+  margin-bottom: 25px;
   font-weight: 600;
-  font-size: 15px;
+}
+
+.mt-card {
+  background: #fff;
+  padding: 20px 18px;
+  border-radius: 12px;
+  margin-bottom: 20px;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.08);
+}
+
+.mt-msg {
+  font-size: 14px;
+  color: #444;
+  margin-bottom: 10px;
+}
+
+.mt-name {
+  font-weight: 600;
+  font-size: 14px;
 }

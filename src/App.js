@@ -28,6 +28,9 @@ import DesktopContact from "./components/Desktop/Contact";
 import TrustedBrands from "./components/Desktop/TrustedBrands";
 import DesktopServices from "./components/Desktop/Services";
 import DesktopTestimonials from "./components/Desktop/Testimonials";
+import TestimonialsSlider from "./components/Desktop/TestimonialsSlider";
+import FAQ from "./components/Desktop/FAQ";
+
 
 // ===== Mobile Home =====
 import MobileHero from "./components/Mobile/HeroSection";
@@ -35,7 +38,9 @@ import MobileAbout from "./components/Mobile/About";
 import MobileProjects from "./components/Mobile/Projects";
 import MobileContact from "./components/Mobile/Contact";
 import MobileServices from "./components/Mobile/Services";
-import MobileTestimonials from "./components/Mobile/Testimonials";
+import MobileTestimonialsSlider from "./components/Mobile/MobileTestimonialsSlider";
+
+
 
 // ===== Desktop Home Component =====
 function DesktopHome() {
@@ -46,6 +51,8 @@ function DesktopHome() {
       <section id="projects"><DesktopProjects /></section>
       <section id="services"><DesktopServices /></section>
       <section id="testimonials"><DesktopTestimonials /></section>
+      <section id="testimonials"><TestimonialsSlider /></section>
+      <section id="faq"><FAQ /></section>
       <section id="brands"><TrustedBrands /></section>
       <section id="contact"><DesktopContact /></section>
     </>
@@ -60,7 +67,8 @@ function MobileHome() {
       <section id="about"><MobileAbout /></section>
       <section id="projects"><MobileProjects /></section>
       <section id="services"><MobileServices /></section>
-      <section id="testimonials"><MobileTestimonials /></section>
+      <section id="testimonials"><MobileTestimonialsSlider /></section>
+      <section id="faq"><FAQ /></section>
       <section id="brands"><TrustedBrands /></section>
       <section id="contact"><MobileContact /></section>
     </>

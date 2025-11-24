@@ -4,44 +4,31 @@ import "./Testimonials.css";
 export default function DesktopTestimonials() {
   const testimonials = [
     {
-      name: "Rahul Mehta",
-      company: "Founder, BluSmart",
-      feedback:
-        "Office Space Interior delivered our workspace exactly how we imagined. Superb execution & timely delivery!",
-      img: "https://i.pravatar.cc/150?img=32",
+      name: "Rahul Sharma – BluSmart",
+      msg: "The OfficeSpaceInterior team transformed our entire workspace beautifully. Quick execution & great design!"
     },
     {
-      name: "Priya Anand",
-      company: "HR, Amway India",
-      feedback:
-        "Their team understood our requirements perfectly. The design quality and finish exceeded expectations.",
-      img: "https://i.pravatar.cc/150?img=5",
+      name: "Meera Patel – Amway",
+      msg: "Professional, creative and highly reliable. The 3D design accuracy and final execution was impressive."
     },
     {
-      name: "Arun Kumar",
-      company: "Manager, IHG Hotels",
-      feedback:
-        "Professional, creative, and reliable. They completed a complex project within our timeline and budget.",
-      img: "https://i.pravatar.cc/150?img=12",
-    },
+      name: "Arjun Verma – Pioneer Urban",
+      msg: "We loved the modular setup they delivered. Quality finishing and premium materials."
+    }
   ];
 
   return (
-    <section className="desktop-testimonials">
-      <h2 className="section-title">
-        What Our <span>Clients Say</span>
-      </h2>
+    <div className="dt-wrapper">
+      <h2 className="dt-title">What Our Clients Say</h2>
 
-      <div className="testimonials-wrapper">
-        {testimonials.map((item, i) => (
-          <div className="testimonial-card" key={i}>
-            <img src={item.img} alt={item.name} className="testimonial-img" />
-            <p className="testimonial-text">“{item.feedback}”</p>
-            <h4>{item.name}</h4>
-            <span className="company">{item.company}</span>
+      <div className="dt-grid">
+        {testimonials.map((item, index) => (
+          <div key={index} className="dt-card">
+            <p className="dt-msg">“{item.msg}”</p>
+            <h4 className="dt-name">— {item.name}</h4>
           </div>
         ))}
       </div>
-    </section>
+    </div>
   );
 }
