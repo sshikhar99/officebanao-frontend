@@ -28,20 +28,47 @@ body {
 
 /* Logo image size */
 .ob-logo img {
-  height: 65px !important;   /* Increase logo size */
+  height: 65px !important;
   width: auto;
   object-fit: contain;
 }
 
-/* REMOVE OLD NAVBAR (important) */
+/* ❌ OLD DANGEROUS CSS REMOVED:
+.navbar, .logo, .nav-links { all: unset; }
+This was breaking image rendering in production
+*/
+
+/* Safe reset for old navbar elements */
 .navbar,
 .logo,
 .nav-links,
 .nav-links li,
 .btn,
 .phone {
-  all: unset;
-  display: revert;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  background: none;
+  border: none;
+  box-shadow: none;
+  color: inherit;
+  font: inherit;
+}
+
+/* Restore display for navigation elements */
+.navbar {
+  display: flex;
+}
+
+.nav-links {
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links li {
+  display: flex;
+  align-items: center;
 }
 
 /* ---------------------------------------------------
@@ -183,4 +210,14 @@ body {
   text-align: center;
   background: #222;
   color: #fff;
+}
+
+/* ---------------------------------------------------
+   GLOBAL FIX (IMPORTANT)
+--------------------------------------------------- */
+
+/* Prevent images from collapsing in Production */
+img {
+  display: block;
+  max-width: 100%;
 }
