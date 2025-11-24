@@ -30,6 +30,7 @@ import DesktopServices from "./components/Desktop/Services";
 import DesktopTestimonials from "./components/Desktop/Testimonials";
 import TestimonialsSlider from "./components/Desktop/TestimonialsSlider";
 import FAQ from "./components/Desktop/FAQ";
+import WhyChooseUs from "./components/Desktop/WhyChooseUs";
 
 
 // ===== Mobile Home =====
@@ -42,6 +43,7 @@ import MobileTestimonialsSlider from "./components/Mobile/MobileTestimonialsSlid
 
 
 
+
 // ===== Desktop Home Component =====
 function DesktopHome() {
   return (
@@ -49,6 +51,7 @@ function DesktopHome() {
       <section id="home"><DesktopHero /></section>
       <section id="about"><DesktopAbout /></section>
       <section id="projects"><DesktopProjects /></section>
+      <section id="why"><WhyChooseUs /></section>
       <section id="services"><DesktopServices /></section>
       <section id="testimonials"><DesktopTestimonials /></section>
       <section id="testimonials"><TestimonialsSlider /></section>
@@ -67,6 +70,7 @@ function MobileHome() {
       <section id="about"><MobileAbout /></section>
       <section id="projects"><MobileProjects /></section>
       <section id="services"><MobileServices /></section>
+      <section id="why"><WhyChooseUs /></section>
       <section id="testimonials"><MobileTestimonialsSlider /></section>
       <section id="faq"><FAQ /></section>
       <section id="brands"><TrustedBrands /></section>
