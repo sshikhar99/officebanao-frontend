@@ -109,58 +109,57 @@ export default function App() {
       <ScrollToSection />
 
       <Routes>
-        {/* Home */}
-        <Route
-          path="/"
-          element={
-            <Layout>
-              {isMobile ? <MobileHome /> : <DesktopHome />}
-            </Layout>
-          }
-        />
+  {/* Home */}
+  <Route
+    path="/"
+    element={
+      <Layout>
+        {isMobile ? <MobileHome /> : <DesktopHome />}
+      </Layout>
+    }
+  />
 
-        {/* Internal Pages */}
-        <Route path="/projects" element={<Layout><ProjectsPage /></Layout>} />
-        <Route path="/blogs" element={<Layout><Blogs /></Layout>} />
-        <Route path="/become-partner" element={<Layout><BecomePartner /></Layout>} />
-        <Route path="/about" element={<Layout><About /></Layout>} />
+  {/* Internal Pages */}
+  <Route path="/projects" element={<Layout><ProjectsPage /></Layout>} />
+  <Route path="/blogs" element={<Layout><Blogs /></Layout>} />
+  <Route path="/become-partner" element={<Layout><BecomePartner /></Layout>} />
+  <Route path="/about" element={<Layout><About /></Layout>} />
 
-        {/* DETAILS PAGES (Corrected) */}
-        <Route
-          path="/projects/:id"
-          element={
-            <Layout>
-              <ProjectDetail />
-            </Layout>
-          }
-        />
+  {/* Details Pages */}
+  <Route
+    path="/projects/:id"
+    element={
+      <Layout>
+        <ProjectDetail />
+      </Layout>
+    }
+  />
 
-        <Route
-          path="/blogs/:id"
-          element={
-            <Layout>
-              <BlogDetail />
-            </Layout>
-          }
-        />
+  <Route
+    path="/blogs/:id"
+    element={
+      <Layout>
+        <BlogDetail />
+      </Layout>
+    }
+  />
 
-        {/* Admin Routes */}
-        <Route
-          path="/admin"
-          element={
-            loggedIn ? (
-              <AdminDashboard
-                onLogout={() => {
-                  localStorage.removeItem("token");
-                  setLoggedIn(false);
-                }}
-              />
-            ) : (
-              <AdminLogin onLogin={() => setLoggedIn(true)} />
-            )
-          }
-        />
-      </Routes>
+  {/* Admin Routes */}
+  <Route
+    path="/admin"
+    element={
+      loggedIn ? (
+        <AdminDashboard onLogout={() => {
+          localStorage.removeItem("token");
+          setLoggedIn(false);
+        }} />
+      ) : (
+        <AdminLogin onLogin={() => setLoggedIn(true)} />
+      )
+    }
+  />
+</Routes>
+
     </>
   );
 }
