@@ -2,9 +2,9 @@ import React from "react";
 import { Link, useLocation } from "react-router-dom";
 
 // ✅ Import your images from src/assets
-import project1 from "../../assets/project1.jpg";
-import project2 from "../../assets/project2.jpg";
-import project3 from "../../assets/project3.jpg";
+import project1 from "../../assets/Project 1.jpg";
+import project2 from "../../assets/Project 2.jpg";
+import project3 from "../../assets/Project 3.jpg";
 
 export default function Projects() {
   const location = useLocation();
