@@ -1,24 +1,20 @@
 {
   "files": {
-    "main.css": "./static/css/main.4af536a2.css",
-    "main.js": "./static/js/main.0ac2b902.js",
-    "static/media/project2.jpg": "./static/media/project2.5af4d7e1fe30d2034e81.jpg",
-    "static/media/project1.jpg": "./static/media/project1.ba0584ddacff1a178bd2.jpg",
-    "static/media/project3.jpg": "./static/media/project3.89031a19460688dea0b2.jpg",
+    "main.css": "./static/css/main.ad588330.css",
+    "main.js": "./static/js/main.9375d712.js",
+    "static/media/project3.jpg": "./static/media/project3.7ba5aa0893ac71eb4340.jpg",
+    "static/media/project2.jpg": "./static/media/project2.54f9f5475df649f760ef.jpg",
+    "static/media/project1.jpg": "./static/media/project1.14c1ca94d4d0b15803fe.jpg",
     "static/media/ihg.png": "./static/media/ihg.771faa9b7368d20a0e87.png",
     "static/media/pioneer.png": "./static/media/pioneer.dd21ff4d6a1af547cfaf.png",
     "static/media/blusmart.png": "./static/media/blusmart.9f90e1d1db5bc4c2faf9.png",
     "static/media/okaya.png": "./static/media/okaya.217df722b50e80d5128b.png",
-    "static/media/slick.svg": "./static/media/slick.7ba97953187dc2907930.svg",
-    "static/media/slick.eot": "./static/media/slick.a4e97f5a2a64f0ab1323.eot",
-    "static/media/slick.ttf": "./static/media/slick.c94f7671dcc99dce43e2.ttf",
-    "static/media/slick.woff": "./static/media/slick.295183786cd8a1389865.woff",
     "index.html": "./index.html",
-    "main.4af536a2.css.map": "./static/css/main.4af536a2.css.map",
-    "main.0ac2b902.js.map": "./static/js/main.0ac2b902.js.map"
+    "main.ad588330.css.map": "./static/css/main.ad588330.css.map",
+    "main.9375d712.js.map": "./static/js/main.9375d712.js.map"
   },
   "entrypoints": [
-    "static/css/main.4af536a2.css",
-    "static/js/main.0ac2b902.js"
+    "static/css/main.ad588330.css",
+    "static/js/main.9375d712.js"
   ]
 }
