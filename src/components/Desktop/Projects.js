@@ -14,7 +14,7 @@ function Projects() {
   const location = useLocation(); 
 
   const projects = [
-    { id: 1, img: project1, title: "Modern Workspace" },
+    { id: 1, img: project1, title: "Sector5 Noida Workspace" },
     { id: 2, img: project2, title: "Creative Studio" },
     { id: 3, img: project3, title: "Corporate Office" },
     { id: 4, img: project4, title: "Mordern Boardroom" },

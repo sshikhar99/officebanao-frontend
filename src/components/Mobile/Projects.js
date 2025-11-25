@@ -15,7 +15,7 @@ export default function Projects() {
   const location = useLocation();
 
   const projects = [
-    { id: 1, title: "Modern Workspace", image: project1 },
+    { id: 1, title: "Sector5 Noida Workspace", image: project1 },
     { id: 2, title: "Creative Studio", image: project2 },
     { id: 3, title: "Corporate Office", image: project3 },
     { id: 4, title: "Mordern Boardroom", image: project4 },
