@@ -7,14 +7,10 @@ function ProjectsPreview() {
 
   // Just sample preview projects
   const projects = [
-    { id: 1, title: "Office Design 1", description: "Modern workspace" },
-    { id: 2, title: "Office Design 2", description: "Minimalist interiors" },
-    { id: 3, title: "Office Design 3", description: "Smart design solutions" },
-    { id: 4, title: "Office Design 4", description: "Mordern Boardroom" },
-    { id: 5, title: "Office Design 5", description: "Lounge and Breakout Space" },
-    { id: 6, title: "Office Design 6", description: "Work Cafe" },
-    { id: 7, title: "Office Design 7", description: "Reception Area" },
-    { id: 8, title: "Office Design 8", description: "Executive Cabin" },
+    { id: 1, title: "Office Design 1", description: "Sector 5 Noida Workspace" },
+    { id: 2, title: "Office Design 2", description: "bangalore Workspace" },
+    { id: 3, title: "Office Design 3", description: "Gurugram Workspace" },
+    
   ];
 
   return (

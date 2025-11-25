@@ -5,24 +5,15 @@ import { Link, useLocation } from "react-router-dom";
 import project1 from "../../assets/projects/project1.jpg";
 import project2 from "../../assets/projects/project2.jpg";
 import project3 from "../../assets/projects/project3.jpg";
-import project4 from "../../assets/projects/project4.jpg";
-import project5 from "../../assets/projects/project5.jpg";
-import project6 from "../../assets/projects/project6.jpg";
-import project7 from "../../assets/projects/project7.jpg";
-import project8 from "../../assets/projects/project8.jpg";
+
 
 export default function Projects() {
   const location = useLocation();
 
   const projects = [
-    { id: 1, title: "Sector5 Noida Workspace", image: project1 },
-    { id: 2, title: "Creative Studio", image: project2 },
-    { id: 3, title: "Corporate Office", image: project3 },
-    { id: 4, title: "Mordern Boardroom", image: project4 },
-    { id: 5, title: "Lounge and Breakout Space", image: project5 },
-    { id: 6, title: "Work Cafe", image: project6 },
-    { id: 7, title: "Reception Area", image: project7 },
-    { id: 8, title: "Executive Cabin", image: project8 },
+    { id: 1, title: "Sector 5 Noida Workspace", image: project1 },
+    { id: 2, title: "Bangalore Workspace", image: project2 },
+    { id: 3, title: "Gurugram Workspace", image: project3 }, // Reusing project2 image as placeholder
   ];
 
   return (
