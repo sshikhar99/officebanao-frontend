@@ -14,10 +14,10 @@ export default function MobileNavbar() {
       return;
     }
 
-    if (id === "partner") {
+    /*if (id === "partner") {
       navigate("/become-partner");
       return;
-    }
+    }*/
 
     if (id === "projects" || isPage) {
       navigate("/projects");
@@ -47,7 +47,7 @@ export default function MobileNavbar() {
     { id: "about", label: "About", special: true },
     { id: "projects", label: "Our Work", isPage: true },
     { id: "blogs", label: "Blogs" },
-    { id: "partner", label: "Become a Partner" },
+    /*{ id: "partner", label: "Become a Partner" },*/
     { id: "contact", label: "Contact" },
   ];
 

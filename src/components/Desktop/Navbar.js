@@ -7,7 +7,7 @@ const LINKS = [
   { id: "about", label: "About", special: true },          // ✅ scroll OR page
   { id: "projects", label: "OurWork", isPage: true },      // separate page
   { id: "blogs", label: "Blogs", isPage: true },
-  { id: "partner", label: "Become a Partner", isPage: true },
+  /*{ id: "partner", label: "Become a Partner", isPage: true },*/
   { id: "contact", label: "Contact" },
 ];
 
@@ -24,11 +24,11 @@ export default function Navbar() {
       return;
     }
 
-    // Partner
+    /*// Partner
     if (id === "partner") {
       navigate("/become-partner");
       return;
-    }
+    }*/
 
     // Projects
     if (isPage) {

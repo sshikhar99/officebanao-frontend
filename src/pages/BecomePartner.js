@@ -1,4 +1,4 @@
-import React from "react";
+/*import React from "react";
 import PartnerForm from "../components/PartnerForm";
 
 export default function BecomePartner() {
@@ -10,4 +10,4 @@ export default function BecomePartner() {
       <PartnerForm />
     </div>
   );
-}
+}//*/
