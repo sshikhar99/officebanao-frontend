@@ -1,0 +1,113 @@
+/* BACKDROP */
+.popup-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.65);
+  backdrop-filter: blur(6px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 5000;
+  animation: fadeIn 0.4s ease-out;
+}
+
+/* POPUP CARD */
+.popup-card {
+  width: 90%;
+  max-width: 420px;
+  background: rgba(255, 255, 255, 0.18);
+  padding: 30px;
+  border-radius: 20px;
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  color: #fff;
+  text-align: center;
+  animation: popupScale 0.35s ease-out;
+  position: relative;
+}
+
+/* TITLE */
+.popup-title {
+  font-size: 1.8rem;
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+
+/* SUBTITLE */
+.popup-subtitle {
+  font-size: 0.95rem;
+  opacity: 0.85;
+  margin-bottom: 20px;
+}
+
+/* CLOSE BUTTON */
+.close-btn {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  background: #ff4444;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+/* FORM */
+.popup-form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+/* INPUTS */
+.popup-form input,
+.popup-form select {
+  padding: 12px;
+  border-radius: 10px;
+  border: none;
+  font-size: 14px;
+  outline: none;
+  width: 100%;
+}
+
+/* SUBMIT BUTTON */
+.popup-submit-btn {
+  background: #00bcd4;
+  padding: 12px;
+  border: none;
+  border-radius: 12px;
+  color: white;
+  font-size: 16px;
+  margin-top: 10px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.popup-submit-btn:hover {
+  background: #0097a7;
+}
+
+/* ANIMATIONS */
+@keyframes popupScale {
+  0% {
+    transform: scale(0.5);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

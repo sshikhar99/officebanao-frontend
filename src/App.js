@@ -1,8 +1,12 @@
 // src/App.js
 import React, { useEffect, useState } from "react";
 import { Routes, Route, useLocation } from "react-router-dom";
+
 import ScrollToTop from "./components/ScrollToTop";
 import useDeviceType from "./hooks/useDeviceType";
+
+// Popup
+import LeadPopup from "./components/LeadPopup";
 
 // Pages
 import Blogs from "./pages/Blogs";
@@ -12,14 +16,14 @@ import About from "./pages/About";
 import ProjectDetail from "./pages/ProjectDetail";
 import BlogDetail from "./pages/BlogDetail";
 
-// Admin Pages
+// Admin
 import AdminLogin from "./pages/AdminLogin";
 import AdminDashboard from "./pages/AdminDashboard";
 
 // Layout
 import Layout from "./Layout/Layout";
 
-// ===== Desktop Home =====
+// Desktop Components
 import DesktopHero from "./components/Desktop/HeroSection";
 import DesktopAbout from "./components/Desktop/About";
 import DesktopProjects from "./components/Desktop/Projects";
@@ -31,7 +35,7 @@ import TestimonialsSlider from "./components/Desktop/TestimonialsSlider";
 import FAQ from "./components/Desktop/FAQ";
 import WhyChooseUs from "./components/Desktop/WhyChooseUs";
 
-// ===== Mobile Home =====
+// Mobile Components
 import MobileHero from "./components/Mobile/HeroSection";
 import MobileAbout from "./components/Mobile/About";
 import MobileProjects from "./components/Mobile/Projects";
@@ -39,7 +43,10 @@ import MobileContact from "./components/Mobile/Contact";
 import MobileServices from "./components/Mobile/Services";
 import MobileTestimonialsSlider from "./components/Mobile/MobileTestimonialsSlider";
 
-// ===== Desktop Home Component =====
+
+// ===============================
+// Desktop Home Wrapper
+// ===============================
 function DesktopHome() {
   return (
     <>
@@ -57,7 +64,10 @@ function DesktopHome() {
   );
 }
 
-// ===== Mobile Home Component =====
+
+// ===============================
+// Mobile Home Wrapper
+// ===============================
 function MobileHome() {
   return (
     <>
@@ -74,42 +84,51 @@ function MobileHome() {
   );
 }
 
-// ===== ScrollToSection handler =====
+
+// ==================================
+// Scroll to a section smoothly
+// ==================================
 function ScrollToSection() {
   const location = useLocation();
 
   useEffect(() => {
     if (location.state?.scrollTo) {
-      const targetId = location.state.scrollTo;
+      const id = location.state.scrollTo;
 
-      const tryScroll = (attempts = 5) => {
-        const el = document.getElementById(targetId);
+      const scrollAttempt = (attempts = 5) => {
+        const el = document.getElementById(id);
         if (el) {
           el.scrollIntoView({ behavior: "smooth", block: "start" });
         } else if (attempts > 0) {
-          setTimeout(() => tryScroll(attempts - 1), 150);
+          setTimeout(() => scrollAttempt(attempts - 1), 150);
         }
       };
 
-      tryScroll();
+      scrollAttempt();
     }
   }, [location]);
 
   return null;
 }
 
-// ===== App =====
+
+// ===============================
+// MAIN APP COMPONENT
+// ===============================
 export default function App() {
   const isMobile = useDeviceType();
   const [loggedIn, setLoggedIn] = useState(!!localStorage.getItem("token"));
 
   return (
     <>
+      {/* 🔥 POPUP ALWAYS ON TOP */}
+      <LeadPopup />
+
       <ScrollToTop />
       <ScrollToSection />
 
       <Routes>
-        {/* Home */}
+        {/* HOME */}
         <Route
           path="/"
           element={
@@ -119,32 +138,23 @@ export default function App() {
           }
         />
 
-        {/* Internal Pages */}
+        {/* PAGES */}
         <Route path="/projects" element={<Layout><ProjectsPage /></Layout>} />
         <Route path="/blogs" element={<Layout><Blogs /></Layout>} />
         <Route path="/become-partner" element={<Layout><BecomePartner /></Layout>} />
         <Route path="/about" element={<Layout><About /></Layout>} />
 
-        {/* DETAILS PAGES (Corrected) */}
+        {/* DETAILS */}
         <Route
           path="/projects/:id"
-          element={
-            <Layout>
-              <ProjectDetail />
-            </Layout>
-          }
+          element={<Layout><ProjectDetail /></Layout>}
         />
-
         <Route
           path="/blogs/:id"
-          element={
-            <Layout>
-              <BlogDetail />
-            </Layout>
-          }
+          element={<Layout><BlogDetail /></Layout>}
         />
 
-        {/* Admin Routes */}
+        {/* ADMIN */}
         <Route
           path="/admin"
           element={
