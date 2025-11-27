@@ -15,7 +15,7 @@ export default function LeadPopup() {
   useEffect(() => {
     setTimeout(() => {
       setShowPopup(true);
-    }, 2000);
+    }, 5000);
   }, []);
 
   // Handle input
