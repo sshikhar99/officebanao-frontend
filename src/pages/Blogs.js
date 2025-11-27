@@ -5,24 +5,24 @@ export default function Blogs() {
   const blogPosts = [
     {
       id: 1,
-      title: "How to Design Modern Workspaces",
+      title: "A Modern Collaborative Workspace Designed in Sector 5 Noida",
       date: "Aug 28, 2025",
       excerpt:
-        "Discover the key elements of creating a modern, functional, and collaborative workspace...",
+        "A deep look into how we transformed a traditional office into a modern, flexible, and collaboration-focused workspace...",
     },
     {
       id: 2,
-      title: "Top 5 Office Interior Trends in 2025",
+      title: "Inside the Future-Ready Office Designed in Bangalore",
       date: "Aug 20, 2025",
       excerpt:
-        "From biophilic designs to flexible furniture, here are the trends shaping offices this year...",
+        "Explore how we created an open, wellness-centric, and innovation-driven workspace tailored for today’s hybrid teams...",
     },
     {
       id: 3,
-      title: "Why Good Office Design Boosts Productivity",
+      title: "Premium Meeting & Strategy Suites Designed in Gurugram",
       date: "Aug 15, 2025",
       excerpt:
-        "Learn how thoughtful office layouts and interiors can increase employee happiness and efficiency...",
+        "A detailed look at how we designed high-performance meeting rooms with luxury, comfort, and acoustic perfection...",
     },
   ];
 
@@ -37,8 +37,7 @@ export default function Blogs() {
     >
       <h1 style={{ fontSize: "32px", marginBottom: "20px" }}>Blogs</h1>
       <p style={{ fontSize: "16px", marginBottom: "30px", color: "#555" }}>
-        Explore our latest articles, tips, and insights on office design and
-        workspace innovation.
+        Explore our latest case studies, design ideas, and workspace innovations.
       </p>
 
       <div style={{ display: "grid", gap: "20px" }}>
@@ -63,16 +62,15 @@ export default function Blogs() {
             <h2 style={{ fontSize: "22px", marginBottom: "8px" }}>
               {post.title}
             </h2>
-            <p
-              style={{ fontSize: "14px", color: "#777", marginBottom: "12px" }}
-            >
+
+            <p style={{ fontSize: "14px", color: "#777", marginBottom: "12px" }}>
               {post.date}
             </p>
+
             <p style={{ fontSize: "16px", marginBottom: "15px" }}>
               {post.excerpt}
             </p>
 
-            {/* ✅ Link to dynamic blog detail */}
             <Link
               to={`/blogs/${post.id}`}
               style={{
